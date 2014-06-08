@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+<head>
+
+<title>{Title}</title>
+
+<link rel='icon' href='{Favicon}' />
+<link rel='shortcut icon' href='{Favicon}' />
+<link rel='alternate' type='application/rss+xml' href='{RSS}' />
+<meta name='description' content='{MetaDescription}' />
+
+<meta name="text:Bio" content="Bio here..." />
+
+<style type='text/css'>
+    @font-face {
+        font-family: sharpie;
+        src: url("http://static.tumblr.com/69hvf7q/zjRluirm3/permanentmarker.ttf");
+    }
+    body {
+        margin: auto;
+        color: #333333;
+        width: 675px;
+        padding-bottom: 85px;
+    }
+    a {
+        text-decoration: none;
+        color: #cc1b1b;
+    }
+    #header {
+        font: 45pt sharpie;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #header a {
+        color: #333333;
+    }
+    #subheader {
+        font: 12pt serif;
+        font-variant: small-caps;
+        letter-spacing: .4em;
+        margin-top: -5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    #centerchunk {
+        margin: auto
+    }
+    #post {
+        font: 8pt verdana;
+        line-height: 1.9em;
+        width: 495px;
+        margin: auto;
+        border-bottom: 1px solid #e8e8e8;
+        padding-top: 70px;
+        padding-bottom: 15px;
+    }
+    .date {
+        color: #999999;
+        /*display: block;*/
+    }
+    #tagsandnotes {
+        font: 8pt verdana;
+        margin-bottom: 30px;
+        color: #999999;
+    }
+    .tag a {
+        background: #ffff88;
+        color: #333333;
+    }
+    ul, li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+    .like_and_reblog_buttons {                  /*custom css*/
+        list-style: none;
+    }
+    .like_and_reblog_buttons li {               /*custom css*/
+        float: right;
+        margin: 0;
+        padding: 0px 10px;
+        padding-right: 0px;
+        height: 10px;
+    }
+/*  .like_and_reblog_buttons li:first-child {   custom css
+        border-right: 0px solid #e8e8e8;
+    }*/
+    ol.notes {                                  /*custom css*/
+        padding: 0px;
+        padding-top: 15px;
+        margin: auto;
+        list-style-type: none;
+        /*border-top: solid 0px #e8e8e8;*/
+        width: 495px;
+    }
+    ol.notes li.note {                          /*custom css*/
+        /*border-top: solid 0px;*/
+        line-height:200%
+    }
+    ol.notes li.note img.avatar {               /*custom css*/
+        vertical-align: -4px;
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+    }
+    ol.notes li.note span.action {              /*custom css*/
+        font-weight: normal;
+    }
+    ol.notes li.note .answer_content {          /*custom css*/
+        font-weight: normal;
+    }
+    ol.notes li.note blockquote {               /*custom css*/
+        padding: 4px 10px;
+        margin: 10px 0px 0px 25px;
+    }
+    ol.notes li.note blockquote a {             /*custom css*/
+        text-decoration: none;
+    }
+    /*#sideinfo {
+        font: 8pt verdana;
+    }*/
+    #nav {                                      /*custom css*/
+        text-align: center;
+        width: 180;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 495px;
+        margin: auto;
+        margin-bottom: -50px;
+    }
+    #space {                                    /*custom css*/
+        padding-bottom: 50px;
+    }
+    h1, h2, h3, h4 {
+        font: 18pt sharpie;
+        color: #333333;
+        margin: 0;
+    }
+    h5 {                                        /*custom css*/
+        font: 10pt sharpie;
+        color: #333333;
+        margin: 0;
+        display: inline;
+    }
+  
+    h6 {                                        /*custom css*/
+        font: 11pt sharpie;
+        color: #333333;
+        margin: 0;
+        display: inline;
+    }
+  
+    h3 a {
+        color: #333333;
+        text-decoration: none;
+    }
+    blockquote {
+        margin-left: 0;
+        padding-left: 5px;
+        border-left: 4px solid #ffff88;
+    }
+    .label {
+        color: #333333;
+    }
+    .name {
+        font: 8pt verdana;
+        color: #cc1b1b;
+    }
+    #minibio {
+        font: 9pt verdana;
+        margin-top: 15px;
+        line-height: 1.9em;
+    }
+    #footer {
+        font: 8pt verdana;
+        text-align: center;
+        color: #999999;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e8e8e8;
+        width: 495px;
+        margin: auto;
+    }
+    #footerSpace {                              /*custom css*/
+        color: #333333;
+        font: 8pt verdana;
+        text-align: center;
+        padding-top: 15px;
+        width: 495px;
+        margin: auto;
+
+
+    {CustomCSS}
+    
+    
+</style>
+</head>
+
+<body>
+
+<div id="header">
+  <a href="/">{Title}</a>
+  <div id="subheader">
+    <a href="/">{Description}</a>
+  </div>
+</div>
+
+<div id="nav">
+        <h3>
+        <a href="{Home}">Home</a>
+        <a href="{Archive}">· Archive</a>
+        <a href="{RSS}">· RSS</a>
+        {block:AskEnabled}
+          <a href="{Ask}">· Ask</a></h3>
+        {/block:AskEnabled}
+      </div>
+      
+      <div id="space"></div>
+
+<div id="centerchunk">
+  <tr>
+    <td id="postcolumn">
+        
+      {block:Posts}
+        <div id="post">
+
+          {block:Text}
+            {block:Title}
+              <h3><a href="{Permalink}">{Title}</a></h3>
+            {/block:Title}
+            
+            <p id="postbody">
+              {Body}
+            </p>
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Text}
+
+          {block:Photo}
+            
+            <p>{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}</p>
+            {block:Caption}
+              <p>{Caption}</p>
+            {/block:Caption}
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Photo}
+
+          {block:Photoset}
+            
+            <p>{Photoset-500}</p>
+            {block:Caption}
+              <p>{Caption}</p>
+            {/block:Caption}
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Photoset}
+
+          {block:Quote}
+            {block:Source}
+              <h3><a href="{Permalink}">{Source}</a></h3>
+            {/block:Source}
+            
+            <blockquote>{Quote}</blockquote>
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Quote}
+
+          {block:Link}
+            <h3><a href="{URL}">{Name}</a></h3>
+            
+            {block:Description}
+              <p>{Description}</p>
+            {/block:Description}
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Link}
+
+          {block:Chat}
+            {block:Title}
+              <h3><a href="{Permalink}">{Title}</a></h3>
+            {/block:Title}
+            
+            <p>
+              <ul class="chat">
+                {block:Lines}
+                  <li class="{Alt} user_{UserNumber}">
+                  {block:Label}
+                    <span class="label">{Label}</span>
+                  {/block:Label}
+                  {Line}</li>
+                {/block:Lines}
+              </ul>
+            </p>
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Chat}
+
+          {block:Audio}
+            <h3><a href="{Permalink}">{TrackName}</a></h3>
+            
+            {AudioPlayerBlack}
+            {block:Caption}
+              {Caption}
+            {/block:Caption}
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Audio}
+          
+          {block:Video}
+            
+            {Video-500}
+            {block:Caption}
+              {Caption}
+            {/block:Caption}
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Video}
+          
+          {block:Answer}
+            
+            <h3><a href="{Permalink}">{Asker} asked:</a></h3>
+            {Question}
+            <blockquote>{Answer}</blockquote>
+            
+            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+            
+          {/block:Answer}
+              
+        </div>
+  
+        <div id="tagsandnotes">
+          {block:HasTags}
+            {block:Tags}
+              <span class="tag"><a href='{TagURL}'>#{Tag}</a></span>
+            {/block:Tags}
+          {/block:HasTags}
+          {block:PostNotes}
+            {block:Posts}
+              {PostNotes}
+            {/block:Posts}
+          {/block:PostNotes}
+        </div>
+        
+      {/block:Posts}
+    </td>
+    <td id="sideinfo">
+    
+      <!--<div id="nav">
+        <h3>
+        <a href="{Home}">· Home</a><br />
+        <a href="{Archive}">· Archive</a><br />
+        <a href="{RSS}">· RSS</a><br />
+        {block:AskEnabled}
+          <a href="{Ask}">· Ask</a><br /></h3>
+        {/block:AskEnabled}
+      </div>-->
+
+      <div id="minibio">
+        <p>{Bio}</p>
+      </div>
+
+    </td>
+  </tr>
+</div>
+
+<div id="footer">
+  <p>
+    {block:Pagination}
+      {block:PreviousPage}
+        <a href="{PreviousPage}">Previous</a>
+      {/block:PreviousPage}
+      {block:NextPage}
+        <a href="{NextPage}">Next</a>
+      {/block:NextPage}
+    {/block:Pagination}
+  </p>
+</div>  
+
+<div id="footerSpace">
+<p>Here's the <a href="{Archive}">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h5>©2014 · </h5><h6>jukespaker</h6>
+</div>
+
+</body>
+</html>
