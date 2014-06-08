@@ -71,12 +71,27 @@
     }
     #tagsandnotes {
         font: 8pt verdana;
-        margin-bottom: 30px;
+        margin-top: 30px;
         color: #999999;
     }
-    .tag a {
+    .tags {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .tags a {
         background: #ffff88;
         color: #333333;
+    }
+    .tags ul {
+        list-style-type: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    .tags li {
+        margin: 0;
+        padding-right: 10px;
+        display: inline;
     }
     ul, li {
         list-style-type: none;
@@ -144,7 +159,7 @@
         
     }
     #space {                                    /*custom css*/
-        padding-bottom: 50px;
+        padding-bottom: 35px;
     }
     h1, h2, h3, h4 {
         font: 18pt sharpie;
@@ -346,13 +361,6 @@
               {Body}
             </p>
             
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
-            
           {/block:Text}
 
           {block:Photo}
@@ -361,13 +369,6 @@
             {block:Caption}
               <p>{Caption}</p>
             {/block:Caption}
-            
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
             
           {/block:Photo}
 
@@ -378,13 +379,6 @@
               <p>{Caption}</p>
             {/block:Caption}
             
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
-            
           {/block:Photoset}
 
           {block:Quote}
@@ -394,13 +388,6 @@
             
             <blockquote>{Quote}</blockquote>
             
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
-            
           {/block:Quote}
 
           {block:Link}
@@ -409,13 +396,6 @@
             {block:Description}
               <p>{Description}</p>
             {/block:Description}
-            
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
             
           {/block:Link}
 
@@ -436,13 +416,6 @@
               </ul>
             </p>
             
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
-            
           {/block:Chat}
 
           {block:Audio}
@@ -453,13 +426,6 @@
               {Caption}
             {/block:Caption}
             
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
-            
           {/block:Audio}
           
           {block:Video}
@@ -469,13 +435,6 @@
               {Caption}
             {/block:Caption}
             
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
-            
           {/block:Video}
           
           {block:Answer}
@@ -484,21 +443,12 @@
             {Question}
             <blockquote>{Answer}</blockquote>
             
-            <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
-            
-            <ul class="like_and_reblog_buttons">
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-            </ul><br />
-            
           {/block:Answer}
-              
-        </div>
-  
+          
         <div id="tagsandnotes">
           {block:HasTags}
             {block:Tags}
-              <span class="tag"><a href='{TagURL}'>#{Tag}</a></span>
+              <span class="tags"><a href='{TagURL}'># {Tag}</a></span>
             {/block:Tags}
           {/block:HasTags}
           {block:PostNotes}
@@ -506,6 +456,15 @@
               {PostNotes}
             {/block:Posts}
           {/block:PostNotes}
+        </div>  
+          
+        <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
+            
+            <ul class="like_and_reblog_buttons">
+              <li>{ReblogButton}</li>
+              <li>{LikeButton}</li>
+            </ul><br />
+          
         </div>
         
       {/block:Posts}
