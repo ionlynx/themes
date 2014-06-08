@@ -28,7 +28,7 @@
     body {
         margin: auto;
         color: #333333;
-        width: 495px;
+        width: 500px;
         padding-bottom: 85px;
     }
     a {
@@ -58,7 +58,7 @@
     #post {
         font: 8pt verdana;
         line-height: 1.9em;
-        /*width: 495px;*/
+        /*width: 500px;*/
         margin: auto;
         border-bottom: 1px solid #e8e8e8;
         padding-top: 60px;
@@ -103,7 +103,7 @@
         margin: auto;
         list-style-type: none;
         /*border-top: solid 0px #e8e8e8;*/
-        width: 495px;
+        width: 500px;
     }
     ol.notes li.note {                          /*custom css*/
         /*border-top: solid 0px;*/
@@ -137,7 +137,7 @@
         border-bottom: 1px solid #e8e8e8;
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 495px;
+        width: 500px;
         margin: auto;
         margin-bottom: -50px;
         word-spacing: 13px;
@@ -193,7 +193,7 @@
         color: #999999;
         padding-bottom: 15px;
         border-bottom: 1px solid #e8e8e8;
-        width: 495px;
+        width: 500px;
         margin: auto;
     }
     #footerSpace {                              /*custom css*/
@@ -201,7 +201,7 @@
         font: 8pt verdana;
         text-align: center;
         padding-top: 15px;
-        width: 495px;
+        width: 500px;
         margin: auto;
     }
 
