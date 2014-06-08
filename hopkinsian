@@ -67,16 +67,14 @@
     }
     .date {
         color: #999999;
-        /*display: block;*/
+        display: inline;
     }
     #tagsandnotes {
         font: 8pt verdana;
-        margin-top: 30px;
+        /*margin-top: 30px;*/
         color: #999999;
     }
     .tags {
-        margin-top: 10px;
-        margin-bottom: 30px;
     }
     .tags a {
         background: #ffff88;
@@ -143,9 +141,6 @@
     ol.notes li.note blockquote a {             /*custom css*/
         text-decoration: none;
     }
-    /*#sideinfo {
-        font: 8pt verdana;
-    }*/
     #nav {                                      /*custom css*/
         text-align: center;
         border-top: 1px solid #e8e8e8;
@@ -172,33 +167,29 @@
         margin: 0;
         display: inline;
     }
-  
     h6 {                                        /*custom css*/
         font: 11pt sharpie;
         color: #333333;
         margin: 0;
         display: inline;
     }
-    
     h7 {                                        /*custom css*/
         font: 11pt sharpie;
         color: #333333;
-        margin: 0;
+        margin: auto;
         display: block;               /*display: block is important*/
         text-indent: 10px;
+        margin-bottom: 15px;
     }
-  
     h3 a {
         color: #333333;
         text-decoration: none;
     }
-    
     h6, h7 a {
         color: #333333;
         text-decoration: none;
         /*background: #ffff88;*/
     }
-
     blockquote {
         margin-left: 0px;
         padding-left: 5px;
@@ -487,16 +478,6 @@
     </td>
     <td id="sideinfo">
     
-      <!--<div id="nav">
-        <h3>
-        <a href="http://yourURL.tumblr.com">· Home</a><br />
-        <a href="http://yourURL.tumblr.com/archive">· Archive</a><br />
-        <a href="{RSS}">· RSS</a><br />
-        {block:AskEnabled}
-          <a href="http://yourURL.tumblr.com/ask">· Ask</a><br /></h3>
-        {/block:AskEnabled}
-      </div>-->
-
       <div id="minibio">
         <p>{Bio}</p>
       </div>
