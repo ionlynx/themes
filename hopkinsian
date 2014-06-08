@@ -23,7 +23,7 @@
     }
     html {                                          /*custom css*/
 		background-color: {color:Background};
-        -webkit-font-smoothing: antialiased;
+        /*-webkit-font-smoothing: antialiased;*/
     }
     body {
         margin: auto;
@@ -133,7 +133,6 @@
     }*/
     #nav {                                      /*custom css*/
         text-align: center;
-        width: 180;
         border-top: 1px solid #e8e8e8;
         border-bottom: 1px solid #e8e8e8;
         padding-top: 15px;
@@ -141,6 +140,8 @@
         width: 495px;
         margin: auto;
         margin-bottom: -50px;
+        word-spacing: 13px;
+        
     }
     #space {                                    /*custom css*/
         padding-bottom: 50px;
@@ -311,16 +312,16 @@
 </div>
 
 <div id="nav">
-        <h3>
-        <a href="http://ionlynx.tumblr.com">Home</a>
-        <a href="http://ionlynx.tumblr.com/archive">· Archive</a>
-        <a href="{RSS}">· RSS</a>
-        {block:AskEnabled}
-          <a href="http://ionlynx.tumblr.com/ask">· Ask</a></h3>
-        {/block:AskEnabled}
-      </div>
-      
-      <div id="space"></div>
+    <h3>
+    <a href="http://ionlynx.tumblr.com">Home</a>
+    <a href="http://ionlynx.tumblr.com/archive">· Archive</a>
+    <a href="{RSS}">· RSS</a>
+    {block:AskEnabled}
+        <a href="http://ionlynx.tumblr.com/ask">· Ask</a></h3>
+    {/block:AskEnabled}
+</div>
+  
+<div id="space"></div>
 
 <div id="centerchunk">
   <tr>
