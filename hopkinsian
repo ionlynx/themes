@@ -61,7 +61,7 @@
         /*width: 500px;*/
         margin: auto;
         border-bottom: 1px solid #e8e8e8;
-        padding-top: 60px;
+        padding-top: 40px;
         padding-bottom: 15px;
         overflow: hidden;               /*from blockquote*/
     }
@@ -201,6 +201,13 @@
         font: 8pt verdana;
         text-align: center;
         padding-top: 15px;
+        width: 500px;
+        margin: auto;
+    }
+    
+    #space {                                     /*custom css*/
+        text-align: center;
+        padding-top: 50px;
         width: 500px;
         margin: auto;
     }
