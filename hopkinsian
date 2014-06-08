@@ -33,7 +33,7 @@
     }
     a {
         text-decoration: none;
-        color: #cc1b1b;
+        color: #333333;
     }
     #header {
         font: 45pt sharpie;
@@ -179,11 +179,26 @@
         margin: 0;
         display: inline;
     }
+    
+    h7 {                                        /*custom css*/
+        font: 11pt sharpie;
+        color: #333333;
+        margin: 0;
+        display: block;               /*display: block is important*/
+        text-indent: 10px;
+    }
   
     h3 a {
         color: #333333;
         text-decoration: none;
     }
+    
+    h6, h7 a {
+        color: #333333;
+        text-decoration: none;
+        /*background: #ffff88;*/
+    }
+
     blockquote {
         margin-left: 0px;
         padding-left: 5px;
@@ -382,11 +397,12 @@
           {/block:Photoset}
 
           {block:Quote}
+          
+          <blockquote>{Quote}</blockquote>
+          
             {block:Source}
-              <h3><a href="{Permalink}">{Source}</a></h3>
+              <h7><a href="{Permalink}">{Source}</a></h7>
             {/block:Source}
-            
-            <blockquote>{Quote}</blockquote>
             
           {/block:Quote}
 
