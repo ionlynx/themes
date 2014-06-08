@@ -313,11 +313,11 @@
 
 <div id="nav">
     <h3>
-    <a href="http://ionlynx.tumblr.com">Home</a>
-    <a href="http://ionlynx.tumblr.com/archive">· Archive</a>
+    <a href="http://yourURL.tumblr.com">Home</a>
+    <a href="http://yourURL.tumblr.com/archive">· Archive</a>
     <a href="{RSS}">· RSS</a>
     {block:AskEnabled}
-        <a href="http://ionlynx.tumblr.com/ask">· Ask</a></h3>
+        <a href="http://yourURL.tumblr.com/ask">· Ask</a></h3>
     {/block:AskEnabled}
 </div>
   
@@ -507,11 +507,11 @@
     
       <!--<div id="nav">
         <h3>
-        <a href="http://ionlynx.tumblr.com">· Home</a><br />
-        <a href="http://ionlynx.tumblr.com/archive">· Archive</a><br />
+        <a href="http://yourURL.tumblr.com">· Home</a><br />
+        <a href="http://yourURL.tumblr.com/archive">· Archive</a><br />
         <a href="{RSS}">· RSS</a><br />
         {block:AskEnabled}
-          <a href="http://ionlynx.tumblr.com/ask">· Ask</a><br /></h3>
+          <a href="http://yourURL.tumblr.com/ask">· Ask</a><br /></h3>
         {/block:AskEnabled}
       </div>-->
 
@@ -537,7 +537,7 @@
 </div>  
 
 <div id="footerSpace">
-<p>Here's the <a href="/archive">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h5>©2014 · </h5><h6>ionlynx</h6>
+<p>Here's the <a href="/archive">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h5>©2014 · </h5><h6>jukespaker</h6>
 </div>
 
 </body>
