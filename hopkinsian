@@ -34,14 +34,17 @@
     a {
         text-decoration: none;
         color: #333333;
+        text-transform: lowercase;
     }
     #header {
         font: 45pt sharpie;
         text-align: center;
         margin-bottom: 30px;
+        text-transform: lowercase;
     }
     #header a {
         color: #333333;
+        text-transform: lowercase;
     }
     #subheader {
         font: 12pt serif;
