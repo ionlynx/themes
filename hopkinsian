@@ -61,7 +61,7 @@
         /*width: 500px;*/
         margin: auto;
         border-bottom: 1px solid #e8e8e8;
-        padding-top: 40px;
+        padding-top: 70px;
         padding-bottom: 15px;
         overflow: hidden;               /*from blockquote*/
     }
@@ -69,7 +69,12 @@
         color: #999999;
         display: inline;
     }
-    #tagsandnotes {
+    #tagsonly {
+        font: 8pt verdana;
+        /*margin-top: 30px;*/
+        color: #999999;
+    }
+    #notesonly {
         font: 8pt verdana;
         /*margin-top: 30px;*/
         color: #999999;
@@ -141,20 +146,23 @@
     ol.notes li.note blockquote a {             /*custom css*/
         text-decoration: none;
     }
+    /*#sideinfo {
+        font: 8pt verdana;
+    }*/
     #nav {                                      /*custom css*/
         text-align: center;
         border-top: 1px solid #e8e8e8;
         border-bottom: 1px solid #e8e8e8;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        /*padding-top: 5px;
+        padding-bottom: 5px;*/
         width: 500px;
         margin: auto;
-        margin-bottom: -50px;
         word-spacing: 13px;
-        
+        margin-bottom: -80px;
+        margin-top: -10px;
     }
     #space {                                    /*custom css*/
-        padding-bottom: 35px;
+        padding-bottom: 5px;
     }
     h1, h2, h3, h4 {
         font: 18pt sharpie;
@@ -212,10 +220,9 @@
         font: 8pt verdana;
         text-align: center;
         color: #999999;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
         border-bottom: 1px solid #e8e8e8;
         width: 500px;
-        margin: auto;
     }
     #footerSpace {                              /*custom css*/
         color: #333333;
@@ -452,18 +459,13 @@
             
           {/block:Answer}
           
-        <div id="tagsandnotes">
+        <div id="tagsonly">
           {block:HasTags}
             {block:Tags}
               <span class="tags"><a href='{TagURL}'># {Tag}</a></span>
             {/block:Tags}
           {/block:HasTags}
-          {block:PostNotes}
-            {block:Posts}
-              {PostNotes}
-            {/block:Posts}
-          {/block:PostNotes}
-        </div>  
+        </div>
           
         <a class="date" href="{Permalink}">{12Hour}:{Minutes} {ShortMonth} {DayOfMonth}<sup>{DayOfMonthSuffix}</sup>, {Year} | {NoteCountWithLabel}</a>
             
@@ -475,9 +477,28 @@
         </div>
         
       {/block:Posts}
+      
+      <div id="notesonly">
+          {block:PostNotes}
+            {block:Posts}
+              {PostNotes}
+            {/block:Posts}
+          {/block:PostNotes}
+        </div>  
+      
     </td>
     <td id="sideinfo">
     
+      <!--<div id="nav">
+        <h3>
+        <a href="http://yourURL.tumblr.com">· Home</a><br />
+        <a href="http://yourURL.tumblr.com/archive">· Archive</a><br />
+        <a href="{RSS}">· RSS</a><br />
+        {block:AskEnabled}
+          <a href="http://yourURL.tumblr.com/ask">· Ask</a><br /></h3>
+        {/block:AskEnabled}
+      </div>-->
+
       <div id="minibio">
         <p>{Bio}</p>
       </div>
