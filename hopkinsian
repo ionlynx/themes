@@ -51,6 +51,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 400px;
+        text-transform: lowercase;
     }
     #centerchunk {
         margin: auto
@@ -160,6 +161,7 @@
         word-spacing: 13px;
         margin-bottom: -80px;
         margin-top: -10px;
+        text-transform: lowercase;
     }
     #space {                                    /*custom css*/
         padding-bottom: 5px;
@@ -168,18 +170,21 @@
         font: 18pt sharpie;
         color: #333333;
         margin: 0;
+        text-transform: lowercase;
     }
     h5 {                                        /*custom css*/
         font: 10pt sharpie;
         color: #333333;
         margin: 0;
         display: inline;
+        text-transform: lowercase;
     }
     h6 {                                        /*custom css*/
         font: 11pt sharpie;
         color: #333333;
         margin: 0;
         display: inline;
+        text-transform: lowercase;
     }
     h7 {                                        /*custom css*/
         font: 11pt sharpie;
@@ -188,15 +193,18 @@
         display: block;               /*display: block is important*/
         text-indent: 10px;
         margin-bottom: 15px;
+        text-transform: lowercase;
     }
     h3 a {
         color: #333333;
         text-decoration: none;
+        text-transform: lowercase;
     }
     h6, h7 a {
         color: #333333;
         text-decoration: none;
         /*background: #ffff88;*/
+        text-transform: lowercase;
     }
     blockquote {
         margin-left: 0px;
