@@ -231,6 +231,7 @@
         padding-bottom: 5px;
         border-bottom: 1px solid #e8e8e8;
         width: 500px;
+        word-spacing: 15px;
     }
     #footerSpace {                              /*custom css*/
         color: #333333;
@@ -519,10 +520,10 @@
   <p>
     {block:Pagination}
       {block:PreviousPage}
-        <a href="{PreviousPage}">Previous</a>
+        <a href="{PreviousPage}">Newer · </a>
       {/block:PreviousPage}
       {block:NextPage}
-        <a href="{NextPage}">Next</a>
+        <a href="{NextPage}">Older</a>
       {/block:NextPage}
     {/block:Pagination}
   </p>
