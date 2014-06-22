@@ -91,6 +91,7 @@
     }
     #subheader a {
         text-decoration: none;
+        background: none;
     }
     #post {
         font: 8pt verdana;
