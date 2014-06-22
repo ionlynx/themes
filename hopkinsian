@@ -28,94 +28,10 @@
     }
 
     @font-face {
-      font-family: 'Yanone Kaffeesatz';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v5/YDAoLskQQ5MOAgvHUQCcLaQIa8YiKSd62pwUFuxbIgM.woff) format('woff');
-    }
-
-    @font-face {
-      font-family: 'Amatic SC Bold';
-      font-style: normal;
-      font-weight: 700;
-      src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(https://themes.googleusercontent.com/static/fonts/amaticsc/v4/IDnkRTPGcrSVo50UyYNK7xsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
-    }
-
-    @font-face {
-      font-family: 'Amatic SC';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://themes.googleusercontent.com/static/fonts/amaticsc/v4/MpplwttPme7KwNh79edKGQ.woff) format('woff');
-    }
-
-    @font-face {
-      font-family: 'Shadows Into Light';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://themes.googleusercontent.com/static/fonts/shadowsintolight/v4/clhLqOv7MXn459PTh0gXYJxCHKeeY4rq5IoKkeW6lEs.woff) format('woff');
-    }
-
-    @font-face {
-      font-family: 'Cabin Sketch';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://themes.googleusercontent.com/static/fonts/cabinsketch/v6/d9fijO34zQajqQvl3YHRCRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
-    }
-
-    @font-face {
-      font-family: 'Permanent Marker';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Permanent Marker'), local('PermanentMarker'), url(https://themes.googleusercontent.com/static/fonts/permanentmarker/v3/9vYsg5VgPHKK8SXYbf3sMtQ8hjkU5wE6yjyv-HIHTes.woff) format('woff');
-    }
-    
-    @font-face {
       font-family: 'Covered By Your Grace';
       font-style: normal;
       font-weight: 400;
       src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url(https://themes.googleusercontent.com/static/fonts/coveredbyyourgrace/v4/6ozZp4BPlrbDRWPe3EBGA6Ar-YkLyJ3bf5hIXL1zM3M.woff) format('woff');
-    }
-    
-    @font-face {
-      font-family: 'Codystar';
-      font-style: Normal;
-      font-weight: 400;
-      src: local('Codystar'), url(https://themes.googleusercontent.com/static/fonts/codystar/v2/tuzUpm9FrpBHV4zCG9N48A.woff) format('woff');
-    }
-    
-    @font-face {
-  font-family: 'Codystar Light';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Codystar Light'), local('Codystar-Light'), url(https://themes.googleusercontent.com/static/fonts/codystar/v2/EVaUzfJkcb8Zqx9kzQLXqj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-    }
-    
-    @font-face {
-      font-family: 'Londrina Shadow';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Londrina Shadow'), local('LondrinaShadow-Regular'), url(https://fonts.gstatic.com/s/londrinashadow/v3/dNYuzPS_7eYgXFJBzMoKdQsbDHzshcGcehYmWc1BQyU.woff) format('woff');
-    }
-    
-    @font-face {
-      font-family: 'Faster One';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Faster One'), local('FasterOne-Regular'), url(https://fonts.gstatic.com/s/fasterone/v4/QRLOdTX7XvTaC5XPlg6bKfesZW2xOQ-xsNqO47m55DA.woff) format('woff');
-    }
-    
-    @font-face {
-      font-family: 'Akronim';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Akronim'), local('Akronim-Regular'), url(https://fonts.gstatic.com/s/akronim/v4/6CKVnSfLD-moVpJbGweXQw.woff) format('woff');
-    }
-    
-    @font-face {
-      font-family: 'Caesar Dressing';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Caesar Dressing'), local('CaesarDressing-Regular'), url(https://fonts.gstatic.com/s/caesardressing/v4/2T_WzBgE2Xz3FsyJMq34TxZTI9Kx_2-B_q5eQX1ldvM.woff) format('woff');
     }
     
     html {                                          /*custom css*/
@@ -158,7 +74,7 @@
         text-align: center;
         text-transform: lowercase;
         white-space: nowrap;
-        margin: 0px auto 0px;
+        margin: 25px auto 0px;
         height: 90px;
         line-height: 100px;
         overflow: hidden;
@@ -186,7 +102,7 @@
         font: 8pt verdana;
         line-height: 1.9em;
         /*border-bottom: 1px solid #e8e8e8;*/
-        margin-top: 50px;
+        margin-top: 40px;
         overflow: hidden;               /*from blockquote*/
     }
     .date {
@@ -302,8 +218,7 @@
         border-top: 1px solid #e8e8e8;
         border-bottom: 1px solid #e8e8e8;
         word-spacing: 5px;
-        margin-top: -15px;
-        margin-bottom: 70px;
+        margin: -15px auto 0px;
         text-decoration: none;
         padding: 5px 0px 5px;
     }
@@ -363,7 +278,7 @@
     }
     h6 {
         font: 13px 'Roboto';
-        letter-spacing: 4px;
+        letter-spacing: 6px;
         color: #333333;
         margin: 0;
         text-transform: lowercase;
