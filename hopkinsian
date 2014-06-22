@@ -88,7 +88,7 @@
         color: #000000;
     }
     #subheader {
-        font: 16px serif;
+        font: 16px 'Roboto';
         font-variant: small-caps;
         letter-spacing: .4em;
         text-align: center;
