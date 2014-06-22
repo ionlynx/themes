@@ -21,11 +21,46 @@
 <style type='text/css'>
 
     @font-face {
-  font-family: 'Cabin Sketch';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://themes.googleusercontent.com/static/fonts/cabinsketch/v6/d9fijO34zQajqQvl3YHRCRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
-}
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 300;
+      src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://themes.googleusercontent.com/static/fonts/roboto/v11/iE8HhaRzdhPxC93dOdA05z8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Yanone Kaffeesatz';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v5/YDAoLskQQ5MOAgvHUQCcLaQIa8YiKSd62pwUFuxbIgM.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Amatic SC Bold';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(https://themes.googleusercontent.com/static/fonts/amaticsc/v4/IDnkRTPGcrSVo50UyYNK7xsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Amatic SC';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://themes.googleusercontent.com/static/fonts/amaticsc/v4/MpplwttPme7KwNh79edKGQ.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Shadows Into Light';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://themes.googleusercontent.com/static/fonts/shadowsintolight/v4/clhLqOv7MXn459PTh0gXYJxCHKeeY4rq5IoKkeW6lEs.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Cabin Sketch';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://themes.googleusercontent.com/static/fonts/cabinsketch/v6/d9fijO34zQajqQvl3YHRCRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+    }
 
     @font-face {
       font-family: 'Permanent Marker';
@@ -119,13 +154,14 @@
         margin-top: 5px;
     }
     #header {
-        font: 60px 'Covered By Your Grace';
+        font: 80px 'Covered By Your Grace';
         text-align: center;
         text-transform: lowercase;
         white-space: nowrap;
         margin: 0px auto 0px;
-        /*overflow: hidden;
-        height: 70px;*/
+        height: 90px;
+        line-height: 100px;
+        overflow: hidden;
     }
     #header a {
         color: #333333;
@@ -140,7 +176,7 @@
         font-variant: small-caps;
         letter-spacing: .4em;
         text-align: center;
-        margin: 0px 0px 35px;
+        margin: 0px 0px 30px;
         text-transform: lowercase;
     }
     #subheader a {
@@ -276,14 +312,18 @@
         color: #000000;
     }
     h2 {
-        font: 20px 'Codystar';
+        font: 18px 'Roboto';
+        letter-spacing: 6px;
         color: #333333;
         margin: 0;
+        text-transform: lowercase;
+        font-style: italic;
+        /*font-weight: bold;*/
+        display: inline;
     }
     h2 a {
         color: #333333;
         text-decoration: none;
-        text-transform: uppercase;
     }
     h3 {
         font: 16px verdana;
@@ -295,29 +335,41 @@
         text-decoration: none;
     }
     h4 {                                        /*custom css*/
-        font: 11px serif;
+        font: 11px 'Roboto';
         font-variant: small-caps;
+        font-style: italic;
         letter-spacing: .4em;
         color: #333333;
         margin: 0;
         display: inline;
         text-transform: lowercase;
-        font-weight: bold;
+        /*font-weight: bold;*/
     }
-    h5 {                                        /*custom css*/
-        font: 14px serif;
-        font-variant: small-caps;
-        letter-spacing: .4em;
-        color: #333333;
-        margin: 0;
-        display: inline;
-        text-transform: lowercase;
-        font-weight: bold;
-    }
-    h4 a {
+        h4 a {
         color: #000000;
         text-decoration: none;
         background: none;
+    }
+    h5 {                                        /*custom css*/
+        font: 15px 'Roboto';
+        font-variant: small-caps;
+        font-style: italic;
+        letter-spacing: .4em;
+        color: #333333;
+        margin: 0;
+        display: inline;
+        text-transform: lowercase;
+        /*font-weight: bold;*/
+    }
+    h6 {
+        font: 13px 'Roboto';
+        letter-spacing: 4px;
+        color: #333333;
+        margin: 0;
+        text-transform: lowercase;
+        font-style: italic;
+        /*font-weight: bold;*/
+        display: inline;
     }
     blockquote {
         margin-left: 10px;
@@ -478,11 +530,12 @@
 
 <div id="nav">
     <h2>
-    <a href="http://jukespaker.tumblr.com">Home</a> ·
-    <a href="http://jukespaker.tumblr.com/archive">Archive</a> ·
-    <a href="{RSS}">RSS</a>
+    <a href="http://jukespaker.tumblr.com">Home</a></h2><h6> · </h6>
+    <h2><a href="http://jukespaker.tumblr.com/archive">Archive</a></h2><h6> · </h6>
+    <h2><a href="{RSS}">RSS</a><h6> · </h6>
+    <h2>
     {block:AskEnabled}
-        <a href="http://jukespaker.tumblr.com/ask">· Ask</a>
+        <a href="http://jukespaker.tumblr.com/ask">Ask</a>
     {/block:AskEnabled}
     </h2>
 </div>
