@@ -499,7 +499,7 @@
               <h3><a href="{Permalink}">{Title}</a></h3>
             {/block:Title}
             
-            <p>
+            <!--<p>-->
               <ul class="chat">
                 {block:Lines}
                   <li class="{Alt} user_{UserNumber}">
@@ -509,7 +509,7 @@
                   {Line}</li>
                 {/block:Lines}
               </ul>
-            </p>
+            <!--</p>-->
             
           {/block:Chat}
 
