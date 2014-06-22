@@ -431,9 +431,9 @@
     <h2>
     <a href="http://jukespaker.tumblr.com">Home</a> ·
     <a href="http://jukespaker.tumblr.com/archive">Archive</a> ·
-    <a href="{RSS}">RSS</a> ·
+    <a href="{RSS}">RSS</a>
     {block:AskEnabled}
-        <a href="http://jukespaker.tumblr.com/ask">Ask</a>
+        <a href="http://jukespaker.tumblr.com/ask">· Ask</a>
     {/block:AskEnabled}
     </h2>
 </div>
