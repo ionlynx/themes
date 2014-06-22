@@ -5,12 +5,6 @@
 <title>{Title}</title>
 
 
-<!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>-->
-
-<link href="//fonts.googleapis.com/css?family=Covered+By Your Grace:400" rel="stylesheet" type="text/css">
-
-
 <link rel='icon' href='{Favicon}' />
 <link rel='shortcut icon' href='{Favicon}' />
 <link rel='alternate' type='application/rss+xml' href='{RSS}' />
@@ -216,11 +210,11 @@
     #nav {                                      /*custom css*/
         text-align: center;
         border-top: 1px solid #e8e8e8;
-        border-bottom: 1px solid #e8e8e8;
+        /*border-bottom: 1px solid #e8e8e8;*/
         word-spacing: 5px;
         margin: -15px auto 0px;
         text-decoration: none;
-        padding: 5px 0px 5px;
+        padding: 15px 0px 15px;
     }
     #nav a:hover{
         background: none;
