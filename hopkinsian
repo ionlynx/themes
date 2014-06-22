@@ -33,10 +33,10 @@
         /*-webkit-font-smoothing: antialiased;*/
     }
     body {
-        margin: auto;
+        margin: auto auto auto auto;
         color: #333333;
         width: 500px;
-        padding-bottom: 85px;
+        padding: 25px 0px 85px;
     }
     a {
         color: #333333;
@@ -68,7 +68,7 @@
         text-align: center;
         text-transform: lowercase;
         white-space: nowrap;
-        margin: 25px auto 0px;
+        margin: 0px auto 0px;
         height: 90px;
         line-height: 100px;
         overflow: hidden;
@@ -271,6 +271,11 @@
         text-transform: lowercase;
         /*font-weight: bold;*/
     }
+     h5 a {
+        color: #000000;
+        text-decoration: none;
+        background: none;
+    }
     h6 {
         font: 13px 'Roboto';
         letter-spacing: 6px;
@@ -280,6 +285,11 @@
         font-style: italic;
         /*font-weight: bold;*/
         display: inline;
+    }
+     h6 a {
+        color: #000000;
+        text-decoration: none;
+        background: none;
     }
     blockquote {
         margin-left: 10px;
@@ -322,17 +332,19 @@
         margin: auto;
         word-spacing: 0px;
     }
-    
+    #footerSpace a:hover{
+        background: none;
+        color: #000000;
+        text-decoration: underline;
+    }
     #space {                                     /*custom css*/
         margin-bottom: 15px;
         margin-top: 15px;
     }
-    
     #quotesource {
         word-wrap: break-word;
         width: 310px;
     }
-
     /*.logotitle {
         margin: auto;
     }
@@ -340,7 +352,6 @@
     .logo {
         text-align: center;
     }*/
-    
     .animated {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
@@ -643,7 +654,8 @@
   
 
 <div id="footerSpace">
-<p>Here's the <a href="/archive">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h4>{CopyrightYears} · </h4><h5>theme by jukespaker</h5>
+<p>Here's the <a href="/archive">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h4>{CopyrightYears} · </h4><h5>theme by <a href="mailto:jukespaker@gmail.com?Subject=Theme%20Support" target="_top">
+jukespaker</a></h5>
 </div>
 
 </body>
