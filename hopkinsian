@@ -8,6 +8,8 @@
 <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>-->
 
+<link href="//fonts.googleapis.com/css?family=Covered+By Your Grace:400" rel="stylesheet" type="text/css">
+
 
 <link rel='icon' href='{Favicon}' />
 <link rel='shortcut icon' href='{Favicon}' />
@@ -17,10 +19,70 @@
 <meta name="text:Bio" content="Bio here..." />
 
 <style type='text/css'>
+
     @font-face {
-        font-family: sharpie;
-        src: url("http://static.tumblr.com/69hvf7q/zjRluirm3/permanentmarker.ttf");
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://themes.googleusercontent.com/static/fonts/cabinsketch/v6/d9fijO34zQajqQvl3YHRCRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+    @font-face {
+      font-family: 'Permanent Marker';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Permanent Marker'), local('PermanentMarker'), url(https://themes.googleusercontent.com/static/fonts/permanentmarker/v3/9vYsg5VgPHKK8SXYbf3sMtQ8hjkU5wE6yjyv-HIHTes.woff) format('woff');
     }
+    
+    @font-face {
+      font-family: 'Covered By Your Grace';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url(https://themes.googleusercontent.com/static/fonts/coveredbyyourgrace/v4/6ozZp4BPlrbDRWPe3EBGA6Ar-YkLyJ3bf5hIXL1zM3M.woff) format('woff');
+    }
+    
+    @font-face {
+      font-family: 'Codystar';
+      font-style: Normal;
+      font-weight: 400;
+      src: local('Codystar'), url(https://themes.googleusercontent.com/static/fonts/codystar/v2/tuzUpm9FrpBHV4zCG9N48A.woff) format('woff');
+    }
+    
+    @font-face {
+  font-family: 'Codystar Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Codystar Light'), local('Codystar-Light'), url(https://themes.googleusercontent.com/static/fonts/codystar/v2/EVaUzfJkcb8Zqx9kzQLXqj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+    }
+    
+    @font-face {
+      font-family: 'Londrina Shadow';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Londrina Shadow'), local('LondrinaShadow-Regular'), url(https://fonts.gstatic.com/s/londrinashadow/v3/dNYuzPS_7eYgXFJBzMoKdQsbDHzshcGcehYmWc1BQyU.woff) format('woff');
+    }
+    
+    @font-face {
+      font-family: 'Faster One';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Faster One'), local('FasterOne-Regular'), url(https://fonts.gstatic.com/s/fasterone/v4/QRLOdTX7XvTaC5XPlg6bKfesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+    }
+    
+    @font-face {
+      font-family: 'Akronim';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Akronim'), local('Akronim-Regular'), url(https://fonts.gstatic.com/s/akronim/v4/6CKVnSfLD-moVpJbGweXQw.woff) format('woff');
+    }
+    
+    @font-face {
+      font-family: 'Caesar Dressing';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Caesar Dressing'), local('CaesarDressing-Regular'), url(https://fonts.gstatic.com/s/caesardressing/v4/2T_WzBgE2Xz3FsyJMq34TxZTI9Kx_2-B_q5eQX1ldvM.woff) format('woff');
+    }
+    
     html {                                          /*custom css*/
 		background-color: {color:Background}
         /*-webkit-font-smoothing: antialiased;*/
@@ -32,15 +94,13 @@
         padding-bottom: 85px;
     }
     a {
-        text-decoration: dotted;
         color: #333333;
-        text-transform: lowercase;
     }
     a:hover{
         background: #ffff88;
         color: #333333;
     }
-    l a {
+    link a {
         text-decoration: none;
         color: #427472;
         text-transform: none;
@@ -59,18 +119,16 @@
         margin-top: 5px;
     }
     #header {
-        font: 45pt sharpie;
+        font: 60px 'Covered By Your Grace';
         text-align: center;
-        margin-bottom: 30px;
         text-transform: lowercase;
-        text-decoration: none;
         white-space: nowrap;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0px auto 0px;
+        /*overflow: hidden;
+        height: 70px;*/
     }
     #header a {
         color: #333333;
-        text-transform: lowercase;
         text-decoration: none;
     }
     #header a:hover{
@@ -78,19 +136,15 @@
         color: #000000;
     }
     #subheader {
-        font: 12pt serif;
+        font: 16px serif;
         font-variant: small-caps;
         letter-spacing: .4em;
-        margin-top: -5px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
+        text-align: center;
+        margin: 0px 0px 35px;
         text-transform: lowercase;
-        text-decoration: none;
     }
-    #subheader a:hover {
-        background: #ffff88;
-        color: #333333;
+    #subheader a {
+        text-decoration: none;
     }
     #post {
         font: 8pt verdana;
@@ -211,63 +265,59 @@
         text-align: center;
         border-top: 1px solid #e8e8e8;
         border-bottom: 1px solid #e8e8e8;
-        word-spacing: 13px;
+        word-spacing: 5px;
         margin-top: -15px;
         margin-bottom: 70px;
-        text-transform: lowercase;
         text-decoration: none;
+        padding: 5px 0px 5px;
     }
     #nav a:hover{
         background: none;
         color: #000000;
     }
-    h1, h2, h4 {
-        font: 18pt sharpie;
+    h2 {
+        font: 20px 'Codystar';
         color: #333333;
         margin: 0;
-        text-transform: lowercase;
-    }
-    h3 {
-        font: 12pt verdana;
-        font-weight: bold;
-        font-variant: small-caps;
-    }
-    h3 a{
-        text-decoration: none;
-    }
-    h5 {                                        /*custom css*/
-        font: 10pt sharpie;
-        color: #333333;
-        margin: 0;
-        display: inline;
-        text-transform: lowercase;
-    }
-    h6 {                                        /*custom css*/
-        font: 11pt sharpie;
-        color: #333333;
-        margin: 0;
-        display: inline;
-        text-transform: lowercase;
-    }
-    h7 {                                        /*custom css*/
-        font: 11pt sharpie;
-        color: #333333;
-        margin: auto;
-        display: block;               /*display: block is important*/
-        text-indent: 10px;
-        margin-bottom: 15px;
-        text-transform: lowercase;
     }
     h2 a {
         color: #333333;
         text-decoration: none;
+        text-transform: uppercase;
+    }
+    h3 {
+        font: 16px verdana;
+        font-weight: bold;
+        font-variant: small-caps;
         text-transform: lowercase;
     }
-    h6, h7 a {
-        color: #333333;
+    h3 a{
         text-decoration: none;
-        /*background: #ffff88;*/
+    }
+    h4 {                                        /*custom css*/
+        font: 11px serif;
+        font-variant: small-caps;
+        letter-spacing: .4em;
+        color: #333333;
+        margin: 0;
+        display: inline;
         text-transform: lowercase;
+        font-weight: bold;
+    }
+    h5 {                                        /*custom css*/
+        font: 14px serif;
+        font-variant: small-caps;
+        letter-spacing: .4em;
+        color: #333333;
+        margin: 0;
+        display: inline;
+        text-transform: lowercase;
+        font-weight: bold;
+    }
+    h4 a {
+        color: #000000;
+        text-decoration: none;
+        background: none;
     }
     blockquote {
         margin-left: 10px;
@@ -420,11 +470,10 @@
     <div class="logotitle animated fadeInDown">
         <a href="/">{Title}</a>
     </div>
+</div>
     
-    <div id="subheader">
-        <a href="/">{Description}</a>
-    </div>
-    
+<div id="subheader">
+    <a href="/">{Description}</a>
 </div>
 
 <div id="nav">
@@ -472,6 +521,18 @@
             
           {/block:Photoset}
 
+          {block:Panorama}
+                    
+            <li class="post panorama">
+                {LinkOpenTag}
+                    <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                {LinkCloseTag}{block:Caption}
+                    <div class="caption">{Caption}</div>
+                {/block:Caption}
+            </li>
+                    
+          {/block:Panorama}
+
           {block:Quote}
           
           <blockquote>{Quote}</blockquote>
@@ -486,7 +547,7 @@
           {/block:Quote}
 
           {block:Link}
-            <l><a href="{URL}">{Name}</a></l>
+            <link><a href="{URL}">{Name}</a></link>
             
             {block:Description}
               <p>{Description}</p>
@@ -513,6 +574,7 @@
           {/block:Chat}
 
           {block:Audio}
+            
             <h3><a href="{Permalink}">{TrackName}</a></h3>
             
             {AudioPlayerBlack}
@@ -573,20 +635,11 @@
     <!--</td>
     <td id="sideinfo">
     
-      <div id="nav">
-        <h3>
-        <a href="http://jukespaker.tumblr.com">· Home</a><br />
-        <a href="http://jukespaker.tumblr.com/archive">· Archive</a><br />
-        <a href="{RSS}">· RSS</a><br />
-        {block:AskEnabled}
-          <a href="http://jukespaker.tumblr.com/ask">· Ask</a><br /></h3>
-        {/block:AskEnabled}
-      </div>
+      <div id="nav"></div>
 
       <div id="minibio">
         <p>{Bio}</p>
       </div>
-
     </td>-->
 
 
@@ -627,7 +680,7 @@
   
 
 <div id="footerSpace">
-<p>Here's the <a href="/archive">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h5>{CopyrightYears} · </h5><h6>theme by jukespaker</h6>
+<p>Here's the <a href="/archive">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h4>{CopyrightYears} · </h4><h5>theme by jukespaker</h5>
 </div>
 
 </body>
