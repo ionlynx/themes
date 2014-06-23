@@ -28,7 +28,7 @@
       src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url(https://themes.googleusercontent.com/static/fonts/coveredbyyourgrace/v4/6ozZp4BPlrbDRWPe3EBGA6Ar-YkLyJ3bf5hIXL1zM3M.woff) format('woff');
     }
     
-    html {                                          /*custom css*/
+    html {                                          
 		background-color: {color:Background}
         /*-webkit-font-smoothing: antialiased;*/
     }
@@ -36,7 +36,7 @@
         margin: auto auto auto auto;
         color: #333333;
         width: 500px;
-        padding: 25px 0px 85px;
+        padding: 25px 0px 100px;
     }
     a {
         color: #333333;
@@ -86,12 +86,25 @@
         font-variant: small-caps;
         letter-spacing: .4em;
         text-align: center;
-        margin: 0px 0px 30px;
+        margin: 0px 0px 15px;
         text-transform: lowercase;
     }
     #subheader a {
         text-decoration: none;
         background: none;
+    }
+    #nav {                                      
+        text-align: center;
+        border-top: 1px solid #e8e8e8;
+        /*border-bottom: 1px solid #e8e8e8;*/
+        word-spacing: 5px;
+        margin: 0px auto 0px;
+        text-decoration: none;
+        padding: 15px 0px 15px;
+    }
+    #nav a:hover{
+        background: none;
+        color: #000000;
     }
     #post {
         font: 8pt verdana;
@@ -114,14 +127,6 @@
         line-height: 170%;
         margin-top: -5px;
         margin-bottom: 5px;
-    }
-    #notesonly {
-        font: 8pt verdana;
-        /*margin-top: 30px;*/
-        color: #999999;
-        text-decoration: none;
-        line-height: 200%;
-        margin-bottom: 20px;
     }
     .tags {
         text-decoration: none;
@@ -149,14 +154,14 @@
         display: inline;
         text-decoration: none;
     }
-    .like_and_reblog_buttons {                  /*custom css*/
+    .like_and_reblog_buttons {                  
         list-style: none;
         text-decoration: none;
     }
     .like_and_reblog_buttons a:hover {
         background: none;
     }
-    .like_and_reblog_buttons li {               /*custom css*/
+    .like_and_reblog_buttons li {               
         float: right;
         padding: 0px 10px;
         padding-right: 0px;
@@ -165,23 +170,29 @@
 /*  .like_and_reblog_buttons li:first-child {   custom css
         border-right: 0px solid #e8e8e8;
     }*/
-    ol.notes {                                  /*custom css*/
-        margin-bottom: -5px;
-        margin-top: 0px;
-        padding: 0px;
-        padding-top: 15px;
+    #notesonly {
+        font: 8pt verdana;
+        /*margin-top: 30px;*/
+        color: #999999;
+        text-decoration: none;
+        line-height: 200%;
+        margin: 40px auto auto auto;
+    }
+    ol.notes {                                  
+        margin: 20px auto 50px;
+        padding: 25px 0px 0px 0px;
         list-style-type: none;
         /*border-top: solid 0px #e8e8e8;*/
         width: 500px;
         text-decoration: none;
         border-top: 1px solid #e8e8e8;
     }
-    ol.notes li.note {                          /*custom css*/
+    ol.notes li.note {                          
         /*border-top: solid 0px;*/
         line-height:200%;
         text-decoration: none;
     }
-    ol.notes li.note img.avatar {               /*custom css*/
+    ol.notes li.note img.avatar {               
         vertical-align: -2px;
         margin-right: 5px;
         width: 16px;
@@ -189,38 +200,25 @@
         text-decoration: none;
         margin-bottom: 0px;
     }
-    ol.notes li.note span.action {              /*custom css*/
+    ol.notes li.note span.action {              
         font-weight: normal;
         text-decoration: none;
     }
-    ol.notes li.note .answer_content {          /*custom css*/
+    ol.notes li.note .answer_content {          
         font-weight: normal;
         text-decoration: none;
     }
-    ol.notes li.note blockquote {               /*custom css*/
+    ol.notes li.note blockquote {               
         padding: 2px 5px 2px;
         margin: 5px 0px 5px 25px;
         text-decoration: none;
     }
-    ol.notes li.note blockquote a {             /*custom css*/
+    ol.notes li.note blockquote a {             
         text-decoration: none;
     }
     /*#sideinfo {
         font: 8pt verdana;
     }*/
-    #nav {                                      /*custom css*/
-        text-align: center;
-        border-top: 1px solid #e8e8e8;
-        /*border-bottom: 1px solid #e8e8e8;*/
-        word-spacing: 5px;
-        margin: -15px auto 0px;
-        text-decoration: none;
-        padding: 15px 0px 15px;
-    }
-    #nav a:hover{
-        background: none;
-        color: #000000;
-    }
     h2 {
         font: 18px 'Roboto';
         letter-spacing: 6px;
@@ -232,8 +230,8 @@
         display: inline;
     }
     h2 a {
-        color: #333333;
         text-decoration: none;
+        background: none;
     }
     h3 {
         font: 16px verdana;
@@ -244,7 +242,7 @@
     h3 a{
         text-decoration: none;
     }
-    h4 {                                        /*custom css*/
+    h4 {                                        
         font: 11px 'Roboto';
         font-variant: small-caps;
         font-style: italic;
@@ -260,7 +258,7 @@
         text-decoration: none;
         background: none;
     }
-    h5 {                                        /*custom css*/
+    h5 {                                        
         font: 15px 'Roboto';
         font-variant: small-caps;
         font-style: italic;
@@ -310,36 +308,68 @@
         line-height: 1.9em;
     }*/
     #footer {
-        font: 8pt verdana;
+        letter-spacing: .4em;
         text-align: center;
-        color: #999999;
-        border-top: 1px solid #e8e8e8;
+        margin: 0px auto 20px;
+        text-transform: lowercase;
         word-spacing: 15px;
         text-decoration: none;
-        padding-top: 15px;
-        padding-bottom: 5px;
-    }
-    #footer a{
-        text-decoration: none;
-    }
-    #footerSpace {                              /*custom css*/
+        padding: 20px auto auto;
         color: #333333;
-        font: 8pt verdana;
-        text-align: center;
-        padding-top: 15px;
-        border-top: 1px solid #e8e8e8;
-        width: 500px;
-        margin: auto;
-        word-spacing: 0px;
     }
-    #footerSpace a:hover{
+    f1 {
+        font: 11px 'Roboto';
+        font-variant: small-caps;
+        letter-spacing: .4em;
+        color: #333333;
+        text-transform: lowercase;
+    }
+    f1 a {
+        text-decoration: none;
         background: none;
-        color: #000000;
-        text-decoration: underline;
     }
-    #space {                                     /*custom css*/
-        margin-bottom: 15px;
-        margin-top: 15px;
+    f1 a:hover {
+        color: #333333;
+        text-decoration: none;
+        background: none;
+    }
+    f2 {
+        font: 18px 'Roboto';
+        letter-spacing: 6px;
+        color: #333333;
+        margin: 0;
+        text-transform: lowercase;
+        font-style: italic;
+        /*font-weight: bold;*/
+        display: inline;
+    }
+    f2 a {
+        color: #333333;
+        text-decoration: none;
+        background: none;
+    }
+    f2 a:hover {
+        color: #000000;
+        text-decoration: none;
+        background: none;
+    }
+    #footerSpace {                              
+        font: 16px 'Roboto';
+        font-variant: small-caps;
+        letter-spacing: .4em;
+        color: #333333;
+        text-transform: lowercase;
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #e8e8e8;
+        /*word-spacing: 0px;*/
+    }
+    #footerSpace a {
+        text-decoration: none;
+        background: none;
+    }
+    #space {                                     
+        margin: 15px auto 15px;
     }
     #quotesource {
         word-wrap: break-word;
@@ -600,6 +630,7 @@
       
       <div id="notesonly">
         {block:PostNotes}
+        <h2>Notes</h2>
           {block:Posts}
             {PostNotes}
           {/block:Posts}
@@ -618,15 +649,15 @@
 
 
 {block:Pagination}
+  <f2>
     <div id="footer">
-      <p>
         {block:PreviousPage}
         <a href="{PreviousPage}">Newer</a>
         {/block:PreviousPage}
         
-        {block:JumpPagination length="11"}
+        {block:JumpPagination length="5"}
         {block:CurrentPage}
-          <span class="current_page">{PageNumber}</span>
+          <span class="current_page" style="color: #999999">{PageNumber}</span>
         {/block:CurrentPage}
         {block:JumpPage}
           <a class="jump_page" href="{URL}">{PageNumber}</a>
@@ -637,25 +668,26 @@
         <a href="{NextPage}">Older</a>
         {/block:NextPage}
     </div>
+  </f2>
 {/block:Pagination}
         
 {block:PermalinkPagination}
+  <f2>
     <div id="footer">
-      <p>
         {block:NextPost}
             <a href="{NextPost}">Newer</a> ·
         {/block:NextPost}
         {block:PreviousPost}
             <a href="{PreviousPost}">Older</a>
         {/block:PreviousPost}
-      </p>
     </div>
+  </f2>
 {/block:PermalinkPagination}
-  
+
 
 <div id="footerSpace">
-<p>Here's the <a href="/archive">archive</a> and a <a href="{RSS}">feed</a> if you want.</p><h4>{CopyrightYears} · </h4><h5>theme by <a href="mailto:jukespaker@gmail.com?Subject=Theme%20Support" target="_top">
-jukespaker</a></h5>
+<f1>{CopyrightYears} · </f1><a href="mailto:jukespaker@gmail.com?Subject=Theme%20Support" target="_top">
+theme by jukespaker</a>
 </div>
 
 </body>
