@@ -484,9 +484,8 @@
     <a href="http://jukespaker.tumblr.com">Home</a></h2><h6> · </h6>
     <h2><a href="http://jukespaker.tumblr.com/archive">Archive</a></h2><h6> · </h6>
     <h2><a href="{RSS}">RSS</a>
-    <h2>
     {block:AskEnabled}
-        <h6> · </h6><a href="http://jukespaker.tumblr.com/ask">Ask</a>
+        <h6> · </h6></h2><a href="http://jukespaker.tumblr.com/ask">Ask</a>
     {/block:AskEnabled}
     </h2>
 </div>
