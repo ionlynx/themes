@@ -13,7 +13,7 @@
 
 <style type='text/css'>
 
-/*move home link between older newer on posts, replace with about or something*/
+/*move home link between older newer on posts, replace with about or something. previously rss, now random*/
 
 /*fonts*/
 
@@ -486,14 +486,14 @@ animation-duration: 1s;
 </div>
 
 <div id="nav">
-    <h2>
-    <a href="http://ionlynx.tumblr.com">Home</a></h2><h6> · </h6>
-    <h2><a href="http://ionlynx.tumblr.com/archive">Archive</a></h2><h6> · </h6>
-    <h2><a href="{RSS}">RSS</a>
+    <f2>
+    <a href="/about">About</a><h6> · </h6>
+    <a href="/archive">Archive</a><h6> · </h6>
     {block:AskEnabled}
-        <h6> · </h6><h2><a href="http://ionlynx.tumblr.com/ask">Ask</a>
+        <a href="/ask">Ask</a><h6> · </h6>
     {/block:AskEnabled}
-    </h2>
+    <a href="/random">Random</a>
+    </f2>
 </div>
 
     <td id="postcolumn">
@@ -641,17 +641,6 @@ animation-duration: 1s;
           {/block:Posts}
         {/block:PostNotes}
       </div>
-      
-    <!--</td>
-    <td id="sideinfo">
-    
-      <div id="nav"></div>
-
-      <div id="minibio">
-        <p>{Bio}</p>
-      </div>
-    </td>-->
-
 
 {block:Pagination}
   <f2>
@@ -682,6 +671,7 @@ animation-duration: 1s;
         {block:NextPost}
             <a href="{NextPost}">Newer</a><h6> · </h6>
         {/block:NextPost}
+        <a href="http://ionlynx.tumblr.com">Home</a><h6> · </h6>
         {block:PreviousPost}
             <a href="{PreviousPost}">Older</a>
         {/block:PreviousPost}
