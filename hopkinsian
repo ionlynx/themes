@@ -9,7 +9,7 @@
 <link rel='alternate' type='application/rss+xml' href='{RSS}' />
 
 <meta name='description' content='{MetaDescription}' />
-<meta name="text:Bio" content="Bio here..." />
+<!-- <meta name="text:Bio" content="Bio here..." /> -->
 
 <style type='text/css'>
 
@@ -586,7 +586,14 @@ animation-duration: 1s;
             
             <h3><a href="{Permalink}">{TrackName}</a></h3>
             
-            {AudioPlayerBlack}
+            {block:AudioEmbed}
+                {AudioEmbed-500}
+            {/block:AudioEmbed}
+            
+            {block:PlayCount}
+                <p style="text-align: right">{PlayCount} plays</p>
+            {/block:PlayCount}
+            
             {block:Caption}
               {Caption}
             {/block:Caption}
