@@ -13,9 +13,21 @@
 
 <style type='text/css'>
 
-/*move home link between older newer on posts, replace with about or something. previously rss, now random*/
-
 /*fonts*/
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script'), local('DancingScript'), url(http://themes.googleusercontent.com/static/fonts/dancingscript/v4/DK0eTGXiZjN6yA8zAEyM2VhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v8/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
 
 @font-face {
 	font-family: 'Roboto';
@@ -65,7 +77,6 @@ embed {
 }
 f1 {
     font: 11px 'Roboto', sans-serif;
-    font-variant: small-caps;
     letter-spacing: .4em;
     color: #333333;
     text-transform: lowercase;
@@ -114,10 +125,9 @@ h2 a {
     background: none;
 }
 h3 {
-    font: 16px verdana;                 /*16px verdana*/
+    font: 11px verdana;                 /*16px verdana*/
     font-weight: bold;
-    font-variant: small-caps;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 h3 a{
     text-decoration: none;
@@ -138,23 +148,7 @@ h4 a {
     text-decoration: none;
     background: none;
 }
-h5 {                                        
-    font: 15px 'Roboto', sans-serif;
-    font-variant: small-caps;
-    font-style: italic;
-    letter-spacing: .4em;
-    color: #333333;
-    margin: 0;
-    display: inline;
-    text-transform: lowercase;
-    /*font-weight: bold;*/
-}
- h5 a {
-    color: #000000;
-    text-decoration: none;
-    background: none;
-}
-h6 {
+h5 {
     font: 13px 'Roboto', sans-serif;
     letter-spacing: 6px;
     color: #333333;
@@ -164,7 +158,7 @@ h6 {
     /*font-weight: bold;*/
     display: inline;
 }
- h6 a {
+ h5 a {
     color: #000000;
     text-decoration: none;
     background: none;
@@ -229,12 +223,11 @@ photo a:hover {
     color: #000000;
 }
 #subheader {
-    font: 16px 'Roboto', sans-serif, verdana;
-    font-variant: small-caps;
+    font: 11px 'Roboto', sans-serif, verdana;
     letter-spacing: .4em;
     text-align: center;
     margin: auto auto 20px;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 #subheader a {
     text-decoration: none;
@@ -286,7 +279,6 @@ ul, li {
     /*margin-top: 30px;*/
     color: #999999;
     text-decoration: none;
-    width:310px;
     line-height: 170%;
     margin-top: -5px;
     margin-bottom: 5px;
@@ -367,11 +359,11 @@ ol.notes li.note blockquote a {
     color: #333333;
 }
 #footerSpace {                              
-    font: 16px 'Roboto', sans-serif;
-    font-variant: small-caps;
+    font: 11px 'Roboto', sans-serif;
+    /*font-variant: small-caps;*/
     letter-spacing: .4em;
     color: #333333;
-    text-transform: lowercase;
+    text-transform: uppercase;
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #e8e8e8;
@@ -487,10 +479,10 @@ animation-duration: 1s;
 
 <div id="nav">
     <f2>
-    <a href="/about">About</a><h6> · </h6>
-    <a href="/archive">Archive</a><h6> · </h6>
+    <a href="/about">About</a><h5> · </h5>
+    <a href="/archive">Archive</a><h5> · </h5>
     {block:AskEnabled}
-        <a href="/ask">Ask</a><h6> · </h6>
+        <a href="/ask">Ask</a><h5> · </h5>
     {/block:AskEnabled}
     <a href="/random">Random</a>
     </f2>
@@ -556,6 +548,15 @@ animation-duration: 1s;
           {/block:Quote}
 
           {block:Link}
+            
+            {block:Thumbnail}
+                {Thumbnail}
+            {/block:Thumbnail}
+            
+            {block:Host}
+                {Host}
+            {/block:Host}
+            
             <link><a href="{URL}">{Name}</a></link>
             
             {block:Description}
@@ -676,9 +677,9 @@ animation-duration: 1s;
   <f2>
     <div id="footer">
         {block:NextPost}
-            <a href="{NextPost}">Newer</a><h6> · </h6>
+            <a href="{NextPost}">Newer</a><h5> · </h5>
         {/block:NextPost}
-        <a href="http://ionlynx.tumblr.com">Home</a><h6> · </h6>
+        <a href="http://ionlynx.tumblr.com">Home</a><h5> · </h5>
         {block:PreviousPost}
             <a href="{PreviousPost}">Older</a>
         {/block:PreviousPost}
