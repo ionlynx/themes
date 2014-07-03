@@ -165,7 +165,6 @@ h5 {
 }
 img {
     margin-bottom: 5px;
-    margin-top: 0px;
 }
 .label {
     color: #333333;
@@ -175,7 +174,6 @@ link a {
     color: #427472;
     text-transform: none;
     font-weight: bold;
-    -webkit-font-smoothing: antialiased;
 }
 .name {
     font: 8pt verdana;                 /*8pt verdana*/
@@ -195,10 +193,10 @@ photo a:hover {
     text-align: center;
     text-transform: lowercase;
     white-space: nowrap;
-    margin: 0px auto -1px;         /*-11px*/
+    margin: 0px auto 5px;         /*-11px*/
     height: 90px;
     line-height: 100px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 #header a {
     color: #333333;
@@ -239,6 +237,7 @@ photo a:hover {
     /*border-bottom: 1px solid #e8e8e8;*/
     margin-top: 40px;
     overflow: hidden;               /*from blockquote*/
+    -webkit-font-smoothing: antialiased;
 }
 
 /*tag styles*/
@@ -550,17 +549,34 @@ animation-duration: 1s;
           {block:Link}
             
             {block:Thumbnail}
-                {Thumbnail}
+            
+                <a href="{URL}" style="background: none; text-decoration: none">
+                    <div id="thumbnail" style="background: #999999">
+                        <img src="{Thumbnail}" alt="{PhotoAlt}" style="margin-bottom: 0px">
+                    </div>
+                    <div id="border" style="border: 1px solid #e8e8e8; margin: 5px auto 5px auto">
+                        <div id="text" style="margin-left: 5px; word-wrap: break-word">
+                            {Name}
+                        </div>
+                    </div>
+                    
+                    {block:Host}
+                    
+                        <div id="border" style="border: 1px solid #e8e8e8">
+    
+                                <div id="text" style="margin-left: 5px; word-wrap: break-word">
+                                    {Host}
+                                </div>
+                                
+                        </div>
+                    {/block:Host}
+                
+                </a>
+                
             {/block:Thumbnail}
-            
-            {block:Host}
-                {Host}
-            {/block:Host}
-            
-            <link><a href="{URL}">{Name}</a></link>
-            
+                
             {block:Description}
-              <p>{Description}</p>
+              {Description}
             {/block:Description}
             
           {/block:Link}
@@ -575,7 +591,7 @@ animation-duration: 1s;
                     {block:Lines}
                         <li class="{Alt} user_{UserNumber}"><br />
                             {block:Label}
-                                <span class="label"style="font-weight:bold">{Label}</span>
+                                <span class="label" style="font-weight: bold">{Label}</span>
                             {/block:Label}{Line}
                         </li>
                     {/block:Lines}
