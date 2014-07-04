@@ -15,7 +15,7 @@
 
 /*fonts*/
 
-@font-face {
+/*@font-face {
   font-family: 'Dancing Script';
   font-style: normal;
   font-weight: 400;
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v8/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
-}
+}*/
 
 @font-face {
 	font-family: 'Roboto';
@@ -75,10 +75,10 @@ embed {
     margin: 5px auto 5px auto;
 }
 f1 {
-    font: 11px 'Roboto', sans-serif;
+    font: 11px 'Georgia', sans-serif;           /*Roboto*/
     letter-spacing: .4em;
     color: #333333;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 f1 a {
     text-decoration: none;
@@ -90,12 +90,12 @@ f1 a:hover {
     background: none;
 }
 f2 {
-    font: 18px 'Roboto', sans-serif;
+    font: 18px 'Georgia', sans-serif;           /*Roboto*/
     letter-spacing: 6px;
     color: #333333;
     margin: 0;
     text-transform: lowercase;
-    font-style: italic;
+    /*font-style: italic;*/
     /*font-weight: bold;*/
     display: inline;
 }
@@ -129,6 +129,33 @@ f4 {
     color: #333333;
     display: inline;
     text-shadow: 0 0 35px #ffffff;
+}
+f5 {
+    font: 18px 'Georgia', sans-serif;           /*Roboto*/
+    letter-spacing: 2px;
+    color: #333333;
+    margin: 0;
+    text-transform: lowercase;
+    /*font-style: italic;*/
+    /*font-weight: bold;*/
+    display: inline;
+}
+f5 a {
+    color: #333333;
+    text-decoration: none;
+    background: none;
+}
+f5 a:hover {
+    color: #000000;
+    text-decoration: none;
+    background: none;
+    
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+    
 }
 h1 {
     font: 11px verdana;                 /*16px verdana*/
@@ -240,7 +267,7 @@ photo a:hover {
   background-clip: text;
 }
 #subheader {
-    font: 11px 'Roboto', sans-serif, verdana;
+    font: 11px 'Georgia', sans-serif, verdana;          /*Roboto*/
     letter-spacing: .4em;
     text-align: center;
     margin: auto auto 20px;
@@ -251,12 +278,13 @@ photo a:hover {
     background: none;
 }
 #post {
-    font: 8pt verdana;             /*8pt verdana*/
+    font: 11px 'Georgia', sans-serif;       /*new*/
+    /*font: 8pt verdana;             /*8pt verdana*/
     line-height: 1.9em;
     /*border-bottom: 1px solid #e8e8e8;*/
     margin-top: 40px;
     overflow: hidden;               /*from blockquote*/
-    -webkit-font-smoothing: antialiased;
+    /*-webkit-font-smoothing: antialiased;*/
 }
 
 /*tag styles*/
@@ -266,12 +294,7 @@ photo a:hover {
     display: inline;
     text-decoration: none;
     
-    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-    
+    font: 8pt verdana;             /*new*/
 }
 .tags {
     text-decoration: none;
@@ -382,9 +405,10 @@ ol.notes li.note blockquote a {
     text-decoration: none;
     padding: 20px auto auto;
     color: #333333;
+    white-space: nowrap;
 }
 #footerSpace {                              
-    font: 11px 'Roboto', sans-serif;
+    font: 11px 'Georgia', sans-serif;       /*Roboto*/
     /*font-variant: small-caps;*/
     letter-spacing: .4em;
     color: #333333;
@@ -489,12 +513,14 @@ animation-duration: 1s;
     float: left;
     width: 500px;
     margin-bottom: 15px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 #thumbnail {
-     float: right;
+    float: right;
 }
 text {
-     word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 	{CustomCSS}
@@ -713,7 +739,8 @@ text {
         <a href="{PreviousPage}">Newer</a>
         {/block:PreviousPage}
         
-        {block:JumpPagination length="5"}
+        <f5>
+        {block:JumpPagination length="7"}
         {block:CurrentPage}
           <span class="current_page" style="color: #999999">{PageNumber}</span>
         {/block:CurrentPage}
@@ -721,6 +748,7 @@ text {
           <a class="jump_page" href="{URL}">{PageNumber}</a>
         {/block:JumpPage}
         {/block:JumpPagination}
+        </f5>
         
         {block:NextPage}
         <a href="{NextPage}">Older</a>
@@ -746,7 +774,7 @@ text {
 
 <div id="footerSpace">
 <f1>{CopyrightYears} · </f1><a href="mailto:jukespaker@gmail.com?Subject=Theme%20Support" target="_top">
-ionlynx</a>
+wish for more colors</a>
 </div>
 
 </body>
