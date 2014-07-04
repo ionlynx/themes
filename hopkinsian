@@ -231,9 +231,10 @@ p {
     text-align: center;
     text-transform: lowercase;
     white-space: nowrap;
-    margin: 0px auto 5px;         /*-11px*/
-    height: 90px;
+    margin: 0px auto 10px;         /*5 and -11px*/
+    height: 85px;           /*90*/
     line-height: 100px;
+    overflow: hidden;
 }
 #header a {
     color: #333333;
@@ -548,7 +549,7 @@ animation-duration: 1s;
 #backgroundheader {
     background: url(https://38.media.tumblr.com/a95d84c0ef0d4634dc76bde78aae6a92/tumblr_n871k1JDTO1s8p3kqo1_400.jpg);
     margin: -115px auto auto;
-    height: 100px;
+    height: 150px;
     width: 400px;
 }
 #container:hover {
@@ -565,9 +566,9 @@ animation-duration: 1s;
 <div id="header">
 
     <div class="logotitle animated fadeInDown">
-        <a href="/">{Title}</a>
+            <a href="/">{Title}</a>
+            <div id="backgroundheader"></div>
     </div>
-    <div id="backgroundheader"></div>
     
 </div>
     
