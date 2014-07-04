@@ -200,6 +200,9 @@ h3 {
 img {
     margin-bottom: 5px;
 }
+img:hover {
+    opacity: 0.9;
+}
 .label {
     color: #333333;
 }
@@ -524,6 +527,9 @@ animation-duration: 1s;
     height: 140px;
     width: 500px;
 }
+#photosetcontainer:hover {
+    opacity: 0.9;
+}
 #thumbnail {
     float: right;
     height: 140px;
@@ -541,7 +547,15 @@ animation-duration: 1s;
 #description {
     clear:both;
 }
-
+#backgroundheader {
+    background: url(https://38.media.tumblr.com/a95d84c0ef0d4634dc76bde78aae6a92/tumblr_n871k1JDTO1s8p3kqo1_400.jpg);
+    margin: -115px auto auto;
+    height: 100px;
+    width: 400px;
+}
+#container:hover {
+    opacity: 0.9;
+}
 
 	{CustomCSS}
 	    
@@ -555,6 +569,8 @@ animation-duration: 1s;
     <div class="logotitle animated fadeInDown">
         <a href="/">{Title}</a>
     </div>
+    <div id="backgroundheader"></div>
+    
 </div>
     
 <div id="subheader">
@@ -598,8 +614,9 @@ animation-duration: 1s;
           {/block:Photo}
 
           {block:Photoset}
-            
+            <div id="photosetcontainer">
             <p>{Photoset-500}</p>
+            </div>
             {block:Caption}
               <p>{Caption}</p>
             {/block:Caption}
@@ -633,7 +650,7 @@ animation-duration: 1s;
 
           {block:Link}
             
-            <a href="{URL}" style="text-decoration: none">
+            <a href="{URL}" style="text-decoration: none" target="_blank">
                 <div id="container">
             
                     <div id="thumbnail">
