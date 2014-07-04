@@ -518,18 +518,30 @@ animation-duration: 1s;
 
 #container{
     background: #999999;
-    float: left;
     width: 500px;
+    height 140px;
     margin-bottom: 15px;
     border-radius: 3px;
     overflow: hidden;
 }
 #thumbnail {
     float: right;
+    height: 140px;
+    width: 140px;
+    background: url(https://38.media.tumblr.com/50f66e73429ed21feade489bd56972c3/tumblr_n86w89iRGF1s8p3kqo1_500.png);
 }
-text {
+#text {
     word-wrap: break-word;
 }
+#textbox {
+    margin: 40px 120px 60px auto;
+    text-align: center;
+    overflow: hidden;
+}
+#description {
+    clear:both;
+}
+
 
 	{CustomCSS}
 	    
@@ -621,33 +633,39 @@ text {
 
           {block:Link}
             
-            {block:Thumbnail}
+            <a href="{URL}" style="background: none; text-decoration: none">
+                <div id="container">
             
-                <a href="{URL}" style="background: none; text-decoration: none">
-                    <div id="container" style="height 140px">
-                        <div id="thumbnail" style="float: right">
+                    <div id="thumbnail">
+            
+                        {block:Thumbnail}
+                
                             <img src="{Thumbnail}" alt="{PhotoAlt}" style="margin-bottom: -6px; height 140px; width: 140px;">
+                            
+                        {/block:Thumbnail}
+                            
+                    </div>
+                        
+                    <div id="textbox">
+                        <div id="text">
+                            <f4>{Name}</f4>
                         </div>
-                        
-                        <div id="textbox" style="margin-top: 40px; text-align: center">
-                            <div id="text">
-                                <f4>{Name}</f4>
-                            </div>
-                    {block:Host}
-                        
+                            
+                        {block:Host}
+                    
                             <div id="text">
                                 <f3>{Host}</f3>
                             </div>
-                        </div>
-                    {/block:Host}
+                            
+                        {/block:Host}
                         
                     </div>
-                    
-                </a>
                 
-            {/block:Thumbnail}
+                </div>
+                    
+            </a>
             
-            <div id="description" style="clear:both">
+            <div id="description">
                 
             {block:Description}
               {Description}
