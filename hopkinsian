@@ -624,19 +624,21 @@ text {
             {block:Thumbnail}
             
                 <a href="{URL}" style="background: none; text-decoration: none">
-                    <div id="container">
-                        <div id="thumbnail">
-                            <img src="{Thumbnail}" alt="{PhotoAlt}" style="margin-bottom: -6px">
+                    <div id="container" style="height 140px">
+                        <div id="thumbnail" style="float: right">
+                            <img src="{Thumbnail}" alt="{PhotoAlt}" style="margin-bottom: -6px; height 140px; width: 140px;">
                         </div>
-                        <div id="text"  style="text-align: center; margin-top: 40px">
-                            <f4>{Name}</f4>
-                        </div>
+                        
+                        <div id="textbox" style="margin-top: 40px; text-align: center">
+                            <div id="text">
+                                <f4>{Name}</f4>
+                            </div>
                     {block:Host}
-                    
-                        <div id="text" style="text-align: center">
+                        
+                            <div id="text">
                                 <f3>{Host}</f3>
+                            </div>
                         </div>
-                              
                     {/block:Host}
                         
                     </div>
