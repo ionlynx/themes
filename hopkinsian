@@ -62,20 +62,21 @@ a {
     color: #333333;
 }
 a:hover{
-    background: #ffff88;
-    color: #333333;
+    background: #db5252;        /*#ffff88*/
+    color: #000000;             /*#333333*/
 }
 blockquote {
+    color: #333333;
     margin-left: 10px;
     padding-left: 10px;
-    border-left: 4px solid #ffff88;
+    border-left: 3px solid #999999;
     width: 440px;               /*same padding on both sides*/
 }
 embed {
     margin: 5px auto 5px auto;
 }
 f1 {
-    font: 11px 'Georgia', sans-serif;           /*Roboto*/
+    font: 12px 'Georgia', sans-serif;           /*Roboto*/
     letter-spacing: .4em;
     color: #333333;
     text-transform: uppercase;
@@ -421,6 +422,13 @@ ol.notes li.note blockquote a {
 #footerSpace a {
     text-decoration: none;
     background: none;
+}
+#footerSpace a:hover {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /*other element stylings*/
