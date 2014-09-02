@@ -133,7 +133,7 @@ f4 {
 }
 f5 {
     font: 15px 'Georgia', sans-serif;           /*Roboto*/
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #333333;
     margin: 0;
     text-transform: lowercase;
@@ -240,20 +240,13 @@ p {
     overflow: hidden;
 }
 #header a {
-    color: #333333;
+    color: #595959;
     text-decoration: none;
 }
 #header a:hover{
     background: none;
-    /*color: #000000;
-    text-shadow: 0 0 300px #ff99ff;*/
-    
-        background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-    
+    color: #000000;
+    /*text-shadow: 0 0 300px #ff99ff;*/
 }
 #nav {                                      
     text-align: center;
@@ -285,6 +278,12 @@ p {
 #subheader a {
     text-decoration: none;
     background: none;
+    color: #595959;
+}
+#subheader a:hover {
+    text-decoration: none;
+    background: none;
+    color: #cccc6d;
 }
 #post {
     font: 11px 'Georgia', sans-serif;       /*new*/
@@ -411,7 +410,7 @@ ol.notes li.note blockquote a {
     text-align: center;
     margin: auto;
     text-transform: lowercase;
-    word-spacing: 15px;
+    word-spacing: 8px;
     text-decoration: none;
     padding: 20px auto auto;
     color: #333333;
@@ -809,7 +808,7 @@ animation-duration: 1s;
         {/block:PreviousPage}
         
         <f5>
-        {block:JumpPagination length="7"}
+        {block:JumpPagination length="9"}
         {block:CurrentPage}
           <span class="current_page" style="color: #999999">{PageNumber}</span>
         {/block:CurrentPage}
