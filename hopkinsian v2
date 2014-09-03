@@ -159,12 +159,17 @@ f5 a:hover {
   background-clip: text;
 }
 h1 {
-    font: 11px verdana;                 /*16px verdana*/
+    font: 25px Alice, Book Antiqua, Palatino, serif;;                 /*16px verdana*/
     font-weight: bold;
-    text-transform: uppercase;
+    width: 430px;
+    letter-spacing: -1px;
 }
 h1 a{
     text-decoration: none;
+}
+h1 a:hover {
+    background: none;
+    text-decoration: underline;
 }
 h2 {                                        
     font: 11px 'Roboto', sans-serif;
@@ -218,7 +223,10 @@ link a {
     color: #cc1b1b;
 }
 p {
+    font-family: Alice, Book Antiqua, Palatino, serif;
+    font-size: 14px;
     margin-top: 0px
+    width: 430px;
 }
 p a {
     color: #595959;
@@ -226,6 +234,12 @@ p a {
 p a:hover {
     background: none;
     text-decoration: underline;
+}
+#chat {
+    width: 430px;
+    font-family: Alice, Book Antiqua, Palatino, serif;
+    font-size: 14px;
+    
 }
 #photo a:hover {
     background: none;
@@ -320,12 +334,13 @@ p a:hover {
     text-decoration: none;
 }
 .tags a {
-    background: #ffff88;
-    color: #595959;
+    background: none;
+    color: #999999;
     text-decoration: none;
 }
 .tags a:hover {
-    text-decoration: underline;
+    color: #000000;
+    background: #ffff88;
 }
 .tags ul {
     list-style-type: none;
@@ -345,11 +360,11 @@ ul, li {
 #tagsonly {
     font: 8pt verdana;             /*8pt verdana*/
     /*margin-top: 30px;*/
-    color: #999999;
-    text-decoration: none;
     line-height: 170%;
     margin-top: -5px;
     margin-bottom: 5px;
+    word-spacing: 5px;
+    
 }
 
 /*note styles*/
@@ -726,21 +741,22 @@ animation-duration: 1s;
           {/block:Link}
 
           {block:Chat}
-            <li class="post chat">
-                {block:Title}
-                    <h1><a href="{Permalink}">{Title}</a></h1>
-                {/block:Title}
-
-                <ul class="chat">
-                    {block:Lines}
-                        <li class="{Alt} user_{UserNumber}"><br />
-                            {block:Label}
-                                <span class="label" style="font-weight: bold">{Label}</span>
-                            {/block:Label}{Line}
-                        </li>
-                    {/block:Lines}
-                </ul>
-            </li>
+                <li class="post chat">
+                    {block:Title}
+                        <h1><a href="{Permalink}">{Title}</a></h1>
+                    {/block:Title}
+                <div id="chat" style="margin-top: -15px">
+                    <ul class="chat">
+                        {block:Lines}
+                            <li class="{Alt} user_{UserNumber}"><br />
+                                {block:Label}
+                                    <span class="label" style="font-weight: bold">{Label}</span>
+                                {/block:Label}{Line}
+                            </li>
+                        {/block:Lines}
+                    </ul>
+                </li>
+            </div>
           {/block:Chat}
 
           {block:Audio}
