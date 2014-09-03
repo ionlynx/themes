@@ -51,7 +51,7 @@ html {
 }
 body {
     margin: auto auto auto auto;
-    color: #333333;
+    color: #595959;
     width: 500px;
     padding: 25px 0px 100px;
 }
@@ -59,18 +59,19 @@ body {
 /*font styling*/
 
 a {
-    color: #333333;
+    color: #595959;
+    text-decoration: none;
 }
 a:hover {
     background: #ffff88;        /*#ffff88*/
-    color: #000000;             /*#333333*/
+    color: #000000;             /*#595959*/
 }
 blockquote {
-    color: #333333;
+    color: #595959;
     margin-left: 1px;
     padding-left: 10px;
     border-left: 3px solid #999999;
-    width: 440px;               /*same padding on both sides*/
+    width: 430px;               /*same padding on both sides*/
 }
 embed {
     margin: 5px auto 5px auto;
@@ -78,7 +79,7 @@ embed {
 f1 {
     font: 12px 'Georgia', sans-serif;           /*Roboto*/
     letter-spacing: .4em;
-    color: #333333;
+    color: #595959;
     text-transform: uppercase;
 }
 f1 a {
@@ -86,14 +87,14 @@ f1 a {
     background: none;
 }
 f1 a:hover {
-    color: #333333;
+    color: #595959;
     text-decoration: none;
     background: none;
 }
 f2 {
     font: 15px 'Georgia', sans-serif;           /*Roboto*/
     letter-spacing: 4px;
-    color: #333333;
+    color: #595959;
     margin: 0;
     text-transform: lowercase;
     /*font-style: italic;*/
@@ -101,7 +102,7 @@ f2 {
     display: inline;
 }
 f2 a {
-    color: #333333;
+    color: #595959;
     text-decoration: none;
     background: none;
 }
@@ -120,21 +121,21 @@ f2 a:hover {
 f3 {
     font: 11px 'Roboto', sans-serif;
     letter-spacing: 1px;
-    color: #333333;
+    color: #595959;
     text-transform: lowercase;
     font-style: italic;
     text-shadow: 0 0 20px #ffffff;
 }
 f4 {
     font: 18px 'Roboto', sans-serif;
-    color: #333333;
+    color: #595959;
     display: inline;
     text-shadow: 0 0 35px #ffffff;
 }
 f5 {
     font: 15px 'Georgia', sans-serif;           /*Roboto*/
     letter-spacing: 2px;
-    color: #333333;
+    color: #595959;
     margin: 0;
     text-transform: lowercase;
     /*font-style: italic;*/
@@ -142,7 +143,7 @@ f5 {
     display: inline;
 }
 f5 a {
-    color: #333333;
+    color: #595959;
     text-decoration: none;
     background: none;
 }
@@ -170,7 +171,7 @@ h2 {
     font-variant: small-caps;
     font-style: italic;
     letter-spacing: .4em;
-    color: #333333;
+    color: #595959;
     margin: 0;
     display: inline;
     text-transform: lowercase;
@@ -184,7 +185,7 @@ h2 a {
 h3 {
     font: 13px 'Roboto', sans-serif;
     letter-spacing: 4px;
-    color: #333333;
+    color: #595959;
     margin: 0;
     text-transform: lowercase;
     font-style: italic;
@@ -204,7 +205,7 @@ img {
     margin-bottom: 5px;
 }
 .label {
-    color: #333333;
+    color: #595959;
 }
 link a {
     text-decoration: none;
@@ -218,6 +219,13 @@ link a {
 }
 p {
     margin-top: 0px
+}
+p a {
+    color: #595959;
+}
+p a:hover {
+    background: none;
+    text-decoration: underline;
 }
 #photo a:hover {
     background: none;
@@ -253,13 +261,13 @@ p {
     border-top: 1px solid #e8e8e8;
     /*border-bottom: 1px solid #e8e8e8;*/
     word-spacing: 5px;
-    margin: 0px auto 0px;
+    margin: 0px auto 76px;
     text-decoration: none;
     padding: 15px 0px 15px;
 }
 #nav a {
     background: none;
-    color: #000000;
+    color: #595959;
 }
 #nav a:hover {
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
@@ -290,8 +298,8 @@ p {
     /*font: 8pt verdana;             /*8pt verdana*/
     line-height: 1.9em;
     /*border-bottom: 1px solid #e8e8e8;*/
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 46px;
+    margin-bottom: 46px;
     overflow: hidden;               /*from blockquote*/
     /*-webkit-font-smoothing: antialiased;*/
 }
@@ -305,12 +313,15 @@ p {
     
     font: 8pt verdana;             /*new*/
 }
+.date a {
+    text-decoration: none;
+}
 .tags {
     text-decoration: none;
 }
 .tags a {
     background: #ffff88;
-    color: #333333;
+    color: #595959;
     text-decoration: none;
 }
 .tags a:hover {
@@ -413,14 +424,14 @@ ol.notes li.note blockquote a {
     word-spacing: 8px;
     text-decoration: none;
     padding: 20px auto auto;
-    color: #333333;
+    color: #595959;
     white-space: nowrap;
 }
 #footerSpace {                              
     font: 11px 'Georgia', sans-serif;       /*Roboto*/
     /*font-variant: small-caps;*/
     letter-spacing: .4em;
-    color: #333333;
+    color: #595959;
     text-transform: uppercase;
     text-align: center;
     padding-top: 20px;
@@ -443,7 +454,7 @@ ol.notes li.note blockquote a {
 /*other element stylings*/
 
 #space {                                     
-    margin: 15px auto 15px;
+    margin: 31px auto 46px;
 }
 #space2 {                                     
     padding-top: 60px;
