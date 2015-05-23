@@ -307,7 +307,7 @@
 
                         <div class="title-group{block:IndexPage} animate{/block:IndexPage}">
                             {block:ShowTitle}
-                            <!-- custom --><div class="title">
+                            <!-- custom --><div class="h-title">
                             
                             <h1 class="blog-title"><a href="/">{Title}<!-- custom --><div class="fadeout"></div><!-- end custom --></a></h1>
                             
